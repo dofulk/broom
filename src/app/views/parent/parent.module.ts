@@ -16,13 +16,13 @@ import { ParentComponent } from "./parent.component";
             path: "linear",
             outlet: "linearTab",
             component: NSEmptyOutletComponent,
-            loadChildren: "~/app/linear/linear.module#LinearModule",
+            loadChildren: "~/app/views/linear/linear.module#LinearModule",
           },
           {
             path: "top",
             outlet: "topTab",
             component: NSEmptyOutletComponent,
-            loadChildren: "~/app/top/top.module#TopModule"
+            loadChildren: "~/app/views/top/top.module#TopModule"
           }
         ]
       }

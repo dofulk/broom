@@ -1,1 +1,16 @@
-<Button text="linear works!" class="btn btn-primary"></Button>
+<ListView [items]="messages" class="list-messages" separatorColor="transparent">
+  <ng-template let-item="item">
+      <FlexBoxLayout class="item-detail" justifyContent="space-between">
+        <Label  class="comment-dressing"></Label>
+        <Label [nsRouterLink]="['/item', item.id]" flexGrow="1" class="comment-text"
+        [text]="item.message" textWrap="true" (tap)="setid(item.id)"></Label>
+        <Label flexGrow="1" class="comment-hearts" [text]="item.hearts.length" width="20" (tap)="likeComment()"></Label>
+      </FlexBoxLayout>
+    </ng-template>
+</ListView>
+
+
+<StackLayout orientation="horizontal" class="inputbar">
+  <TextView class="input" #comment></TextView>
+  <button class="submitButton" type="button" text="submit" name="button" (tap)="submit(comment.text)"></button>
+</StackLayout>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from 'nativescript-angular/router';
+import { UserService } from '../../services/user.service'
 
 
 @Component({
@@ -11,7 +12,8 @@ import { RouterExtensions } from 'nativescript-angular/router';
 export class LoginComponent implements OnInit {
 
   constructor(
-    private router: RouterExtensions
+    private userService: UserService,
+    private router: RouterExtensions,
 
   ) { }
 
@@ -19,6 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   join(username) {
+    this.userService.user = username
     this.router.navigate(['../home'])
   }
 

@@ -1,0 +1,31 @@
+.inputbar {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.input {
+  horizontal-align: stretch;
+  width: 75%;
+}
+.comment-hearts {
+  margin: 5;
+  border-radius: 5;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5;
+}
+.comment-text {
+  margin: 5;
+  width: 80%;
+  vertical-align: center;
+  border-radius: 5;
+  margin-top: 22%;
+  padding: 5;
+  font-size: 16;
+}
+
+.comment-dressing  {
+  border-radius: 2;
+  width: 5;
+  background-color: blue;
+}

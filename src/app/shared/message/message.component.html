@@ -1,0 +1,8 @@
+<FlexBoxLayout class="item-detail" flexWrap="wrap" height="20">
+    <Label class="comment-user" [text]=item.user></Label>
+    <Label  class="comment-dressing"></Label>
+    <Label [nsRouterLink]="['/item', item.id]" flexGrow="1" class="comment-text"
+    [text]=item.message textWrap="true" (tap)="setid(item.id)"></Label>
+    <Label  class="comment-dressing"></Label>
+    <Label flexGrow="1" class="comment-hearts" [text]=item.hearts.length width="20" (tap)="likeComment()"></Label>
+</FlexBoxLayout>

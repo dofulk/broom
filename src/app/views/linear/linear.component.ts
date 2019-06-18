@@ -3,7 +3,7 @@ import { Router } from "@angular/router";
 import { UserService } from '../../services/user.service';
 import { ChatService } from '../../services/chat.service';
 import { Message } from '../../schema/message';
-import { Observable } from 'rxjs'
+
 
 
 @Component({
@@ -14,7 +14,6 @@ import { Observable } from 'rxjs'
 })
 export class LinearComponent implements OnInit {
 
-  inputbox: string;
   messages: Array<Message> = [];
 
   constructor(

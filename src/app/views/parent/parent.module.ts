@@ -5,6 +5,7 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ParentComponent } from "./parent.component";
 
 
+
 @NgModule({
   imports: [
     NativeScriptCommonModule,

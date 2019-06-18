@@ -2,9 +2,6 @@ import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
-import { ParentComponent } from './views/parent/parent.component';
-import { LinearComponent } from './views/linear/linear.component';
-import { TopComponent } from './views/top/top.component';
 import { LoginComponent } from './views/login/login.component';
 import { HomeComponent } from './views/home/home.component';
 

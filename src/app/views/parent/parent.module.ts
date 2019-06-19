@@ -2,7 +2,10 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule, NSEmptyOutletComponent } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 
+import { LinearComponent } from "../linear/linear.component"
 import { ParentComponent } from "./parent.component";
+import { TopComponent } from "../top/top.component";
+
 
 
 
@@ -16,21 +19,21 @@ import { ParentComponent } from "./parent.component";
           {
             path: "linear",
             outlet: "linearTab",
-            component: NSEmptyOutletComponent,
-            loadChildren: "~/app/views/linear/linear.module#LinearModule",
+            component: LinearComponent,
           },
           {
             path: "top",
             outlet: "topTab",
             component: NSEmptyOutletComponent,
-            loadChildren: "~/app/views/top/top.module#TopModule"
           }
         ]
       }
     ])
   ],
   declarations: [
-    ParentComponent
+    ParentComponent,
+    LinearComponent,
+    TopComponent
   ],
   providers: [
   ],

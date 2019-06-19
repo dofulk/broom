@@ -231,6 +231,8 @@ color: #efefef;
   vertical-align: bottom;
   width: 100%;
   color: #303030;
+  min-height: 45;
+  background-color: #303030;
 }
 
 .input {
@@ -250,6 +252,7 @@ color: #efefef;
   border-radius: 5;
   padding: 7;
   font-size: 16;
+  font-family: 
 }
 
 .comment-dressing  {
@@ -262,7 +265,12 @@ color: #efefef;
   font-size: 12;
   width: 100%;
   margin: 3;
+  font-family: serif;
 }
 .list-messages {
+  background-color: #303030;
+}
+
+.wrapper {
   background-color: #303030;
 }

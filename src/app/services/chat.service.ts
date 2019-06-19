@@ -27,7 +27,7 @@ export class ChatService {
   getMessages() {
     return new Observable(observer => {
       this.io.on('chat message', (data) => {
-        observer.next(data);
+        this.zone.run(() => observer.next(data));
       });
       return () => {
         this.io.disconnect();

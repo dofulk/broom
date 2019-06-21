@@ -1,12 +1,13 @@
 
 <FlexBoxLayout class="wrapper" flexDirection="column" justifyContent="flex-end">
-  <ListView [items]="messages" class="list-messages" separatorColor="#38761d" flexDirection="column">
+  <ListView [items]="messages" class="list-messages" separatorColor="#00FFFFFF" flexDirection="column">
   <ng-template let-item="item" >
     <FlexBoxLayout class="item-detail" flexWrap="wrap" height="20">
-      <Label class="comment-user" [text]=item.user></Label>
-      <Label [nsRouterLink]="['/item', item.id]" flexGrow="1" class="comment-text"
+      <Label class="message-buffer"></Label>
+      <Label [nsRouterLink]="['/item', item.id]"  class="comment-text"
       [text]=item.message textWrap="true" (tap)="setid(item.id)"></Label>
-      <Label flexGrow="1" class="comment-hearts" [text]=item.hearts.length width="20" (tap)="likeComment()"></Label>
+      <Label class="comment-user" [text]=item.user></Label>
+      <Label  class="comment-hearts" [text]=item.hearts.length (tap)="likeComment()"></Label>
   </FlexBoxLayout>
   </ng-template>
 </ListView>

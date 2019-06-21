@@ -30,7 +30,6 @@ export class ChatService {
         this.zone.run(() => observer.next(data));
       });
       return () => {
-        this.io.disconnect();
       }
     })
 

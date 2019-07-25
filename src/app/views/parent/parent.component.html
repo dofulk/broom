@@ -1,10 +1,10 @@
 <ActionBar class="action-bar">
     <Label class="action-bar-title" text="thischat"></Label>
 </ActionBar>
-<TabView class="tab-view">
-    <page-router-outlet *tabItem="{title: 'Linear Tab'}" name="linearTab" actionBarVisibility="never">
+<TabView class="tab-view" tabTextColor="white">
+    <page-router-outlet *tabItem="{title: 'New'}" name="linearTab" actionBarVisibility="never" class="tabItem">
     </page-router-outlet>
 
-    <page-router-outlet *tabItem="{title: 'Top Tab'}" name="topTab" actionBarVisibility="never">
+    <page-router-outlet *tabItem="{title: 'Top'}" name="topTab" actionBarVisibility="never" class="tabItem">
     </page-router-outlet>
 </TabView>

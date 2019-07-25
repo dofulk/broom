@@ -13,7 +13,7 @@ import { AppComponent } from "./app.component";
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
-const server = 'http://10.0.2.2:3000'
+const server = 'http://10.0.2.2:3000/'
 
 @NgModule({
   bootstrap: [

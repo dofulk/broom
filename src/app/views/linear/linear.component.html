@@ -2,19 +2,20 @@
 <FlexBoxLayout class="wrapper" flexDirection="column" justifyContent="flex-end">
   <ListView [items]="messages" class="list-messages" separatorColor="#00FFFFFF" flexDirection="column">
   <ng-template let-item="item" >
-    <FlexBoxLayout class="item-detail" flexWrap="wrap" height="20">
-      <Label class="message-buffer"></Label>
+    <CardView ripple="true" margin="6" class="card-view">
+      <FlexBoxLayout flexWrap="wrap">
       <Label [nsRouterLink]="['/item', item.id]"  class="comment-text"
-      [text]=item.message textWrap="true" (tap)="setid(item.id)"></Label>
-      <Label class="comment-user" [text]=item.user></Label>
-      <Label  class="comment-hearts" [text]=item.hearts.length (tap)="likeComment()"></Label>
-  </FlexBoxLayout>
+      [text]=item.message textWrap="true" (tap)="setid(item.id)" row="1"></Label>
+      <Label class="comment-user" [text]=item.user row="2" col=1></Label>
+      <Label  class="comment-hearts" [text]=item.hearts.length (tap)="likeComment()" row="2" col="2"></Label>
+      </FlexBoxLayout>
+    </CardView>
   </ng-template>
 </ListView>
 
 
-  <StackLayout orientation="horizontal" class="inputbar" verticalAlignment="bottom">
-    <TextView class="input" #comment></TextView>
-    <button class="submitButton" type="button" text="submit" name="button" (tap)="submit(comment.text)"></button>
+  <StackLayout orientation="horizontal" verticalAlignment="bottom">
+    <TextView class="input" #comment width="70%"></TextView>
+    <button class="btn" type="button" text="submit" name="button" (tap)="submit(comment.text)"></button>
   </StackLayout>
 </FlexBoxLayout>

@@ -2,6 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule, NSEmptyOutletComponent } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 
+
 import { LinearComponent } from "../linear/linear.component"
 import { ParentComponent } from "./parent.component";
 import { TopComponent } from "../top/top.component";

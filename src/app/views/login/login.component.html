@@ -1,4 +1,9 @@
-<StackLayout height="100%">
-    <TextField #name verticalAlignment="center" hint="Enter username"></TextField>
-    <Button verticalAlignment="center" text="Join" (tap)="join(name.text)"></Button>
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Login"></Label>
+</ActionBar>
+
+
+<StackLayout height="100%" class="page">
+    <TextField #name verticalAlignment="center" class="input" hint="Enter username" color="white" width="85%"></TextField>
+    <Button verticalAlignment="center" text="Join" (tap)="join(name.text)" width="85%" borderRadius="5" class="btn"></Button>
 </StackLayout>

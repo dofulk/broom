@@ -8,31 +8,32 @@ import { Observable } from 'rxjs';
 
 export class ChatService {
 
-  socket: any;
-
   constructor(
     private zone: NgZone,
-    private io: SocketIO,
+    private socketIO: SocketIO
   ) {}
 
-  initSocket() {
-    this.io.connect();
-  }
-
   test(msg) {
-    this.io.emit('chat message', msg);
+    this.socketIO.emit('chat message', msg);
   }
-
+  
+  checkConnection() {
+    console.log(this.socketIO.connected)
+  }
 
   getMessages() {
     return new Observable(observer => {
-      this.io.on('chat message', (data) => {
+      this.socketIO.on('chat message', (data) => {
         this.zone.run(() => observer.next(data));
       });
       return () => {
       }
     })
 
+  }
+
+  closeSocket(){
+    this.socketIO.disconnect();
   }
 
 }

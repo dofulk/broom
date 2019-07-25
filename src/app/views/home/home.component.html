@@ -1,7 +1,16 @@
 <ActionBar class="action-bar">
     <Label class="action-bar-title" text="Home Component"></Label>
 </ActionBar>
-
+<StackLayout>
 <GridLayout rows="auto, auto" class="page">
-    <Button text="Go To Tabs Page" class="btn" [nsRouterLink]="['/parent/default']"></Button>
+    <CardView text="Go To Tabs Page" class="btn" height="100" [nsRouterLink]="['/parent/default']" ripple="true" width="50%">
+        <FlexBoxLayout flexWrap="wrap">
+            <Label text="NBA"  class="group-title"></Label>
+            <Label text="Jesse: Wow I miss Ricky so much!! :(" class="group-recent" textWrap="true"></Label>
+        </FlexBoxLayout>
+    </CardView>
+    
 </GridLayout>
+
+<Button class="btn" text="take a picture!" (tap)="takePicture" ></Button>
+</StackLayout>

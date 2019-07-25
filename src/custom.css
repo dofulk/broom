@@ -3,23 +3,20 @@
 
 
 
-.inputbar {
-  vertical-align: bottom;
-  width: 100%;
-  color: #303030;
-  min-height: 45;
-  /* background-color: #303030; */
-}
+
 
 .input {
-  width: 75%;
-  color: #efefef;
+  color: rgb(255,255,255, .87);
+  background-color: rgb(255,255,255, .11);
+  placeholder-color: rgb(255,255,255, .60);
+  border-radius: 5;
+  margin: 10;
+
 }
 .comment-hearts {
   vertical-align: middle;
   text-align: center;
   width: 50%;
-  /* background-color: green; */
 }
 
 .comment-text {
@@ -28,29 +25,19 @@
   font-size: 18;
   text-align: center;
   padding: 10;
-  /* background-color: red; */
 }
 
 .comment-user {
   font-size: 12;
   width: 50%;
-  /* background-color: blue; */
   font-family: serif;
   text-align: center;
 }
-.list-messages {
-  background-color: #ffbd19;
-  margin: 0 5 0 5;
-}
 
 .wrapper {
-  background-color: #565656;
+  background-color: #121212;
 }
 
-
-.comment-user-filler {
-  background-color: #ffbd19;
-}
 
 .message-buffer {
   width: 100%;
@@ -59,6 +46,42 @@
 }
 
 .tab-view {
-  background-color: #303030
+  tab-background-color: #303030;
+  color: rgb(255,255,255, .60);
+  selected-tab-text-color: rgb(255,255,255, .87);
 }
 
+.card-view {
+  background-color: rgb(255,255,255, .07);
+  color: rgb(255,255,255, .87);
+}
+
+.tabitem {
+  color: rgb(255,255,255, .87);
+}
+
+.action-bar-title{
+  color: rgb(255,255,255, .87);
+}
+
+.page{
+  background-color: #121212;
+}
+
+.btn{
+  background-color: rgb(255,255,255, .07);
+}
+
+.group-title{
+  color: rgb(255,255,255, .87);
+  width: 100%;
+  font-size: 22;
+  text-align: center;
+}
+
+.group-recent{
+  color: rgb(255,255,255, .60);
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+}

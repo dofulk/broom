@@ -2,10 +2,10 @@
   "nativescript": {
     "id": "org.nativescript.broom",
     "tns-ios": {
-      "version": "6.0.1"
+      "version": "5.2.0"
     },
     "tns-android": {
-      "version": "6.0.0"
+      "version": "5.4.0"
     }
   },
   "description": "NativeScript Application",
@@ -13,10 +13,9 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "@angular/animations": "8.0.0",
-    "@angular/cli": "^8.1.2",
     "@angular/common": "8.0.0",
     "@angular/compiler": "8.0.0",
-    "@angular/core": "^8.0.0",
+    "@angular/core": "8.0.0",
     "@angular/forms": "8.0.0",
     "@angular/http": "8.0.0-beta.10",
     "@angular/platform-browser": "8.0.0",
@@ -24,23 +23,23 @@
     "@angular/router": "8.0.0",
     "ajv": "^6.10.2",
     "nativescript-angular": "^8.0.1",
-    "nativescript-camera": "^4.5.0",
     "nativescript-cardview": "^3.2.0",
-    "nativescript-socketio": "^3.3.1",
+    "nativescript-socketio": "^3.2.0",
     "nativescript-theme-core": "^1.0.6",
-    "nativescript-ui-listview": "7.0.0",
+    "nativescript-ui-listview": "^6.4.2",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.3.3",
     "set-value": "^3.0.1",
-    "tns-core-modules": "6.0.1",
+    "tns-core-modules": "^5.4.3",
+    "typescript": "~3.4.5",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "@angular/compiler-cli": "8.0.0",
     "@nativescript/schematics": "^0.6.0",
     "@ngtools/webpack": "8.0.0",
-    "nativescript-dev-webpack": "^1.0.1",
-    "typescript": "3.4.5"
+    "nativescript-dev-typescript": "^0.10.0",
+    "nativescript-dev-webpack": "^1.0.1"
   },
   "gitHead": "f548ec926e75201ab1b7c4a3a7ceefe7a4db15af",
   "readme": "NativeScript Application"
